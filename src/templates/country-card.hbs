@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-head">
+    <img src="{{flags.svg}}" class="card-head__flag" alt="{{name.official}}">
+    <h2 class="card-head__name">{{name.common}}</h2>
+      </div>
+  <div class="card-body">
+    <p class="card-body__text"><b>Capital: </b>{{capital}}</p>
+    <p class="card-body__text"><b>Population: </b>{{population}}</p>
+    <p class="card-body__text"><b>Languages: </b>
+    {{#each languages}}
+      {{this}}
+      {{#unless @last}}, {{/unless}} 
+    {{/each}}</p>
+  </div>
+</div>
